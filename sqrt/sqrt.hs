@@ -16,3 +16,6 @@ sqrtIter :: Float -> Float -> Float
 sqrtIter guess x
         | goodEnough guess x = guess
         | otherwise          = sqrtIter (improve guess x) x
+
+sqrt :: Float -> Float
+sqrt x = sqrtIter 1.0 x
